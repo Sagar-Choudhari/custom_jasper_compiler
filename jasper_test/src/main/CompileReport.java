@@ -7,20 +7,16 @@ public class CompileReport {
     public static void main(String[] args) {
         try {
 
-			String jrxmlFilePath = "/Users/vasundhara-mac/Documents/"
-			
-			
-			+ "BatchMixLoadSummaryReport"
-			
-			
-			+ ".jrxml";
-			String jasperFilePath = "/Users/vasundhara-mac/Documents/"
-			
-			
-			+ "BatchMixLoadSummaryReport"
-			
-			
-			+ ".jasper";
+        	String fileDirectory = "/Users/vasundhara-mac/Documents/";
+        	
+        	String fileName = "RMCDateWiseBatchReport";
+        	
+        	
+        	
+        	
+        	String jrxmlFilePath = fileDirectory + fileName + ".jrxml";
+        	
+        	String jasperFilePath = fileDirectory + fileName + ".jasper";
 
             JasperCompileManager.compileReportToFile(jrxmlFilePath, jasperFilePath);
             System.out.println("Compilation Successful!");
@@ -29,3 +25,5 @@ public class CompileReport {
         }
     }
 }
+
+
